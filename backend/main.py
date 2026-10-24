@@ -38,13 +38,8 @@ JWT_EXPIRY_HOURS = 1
 BUCKET = "student_images"
 
 # Face recognition model
-FACE_RECOGNITION_SPACE = "VinayKatikireddy/face-recognition"
+face_client = Client("VinayKatikireddy/face-recognition", token=os.environ["HF_TOKEN"])
 
-face_client = Client(
-    FACE_RECOGNITION_SPACE,
-    token=os.environ["HF_TOKEN"]
-)
-#face_client = None
 # Initialize Supabase
 supabase = None
 if SUPABASE_URL and SUPABASE_KEY:

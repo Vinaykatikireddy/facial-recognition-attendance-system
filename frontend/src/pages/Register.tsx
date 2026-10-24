@@ -116,7 +116,7 @@ const Register = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Create a password"
-              helperText="Min 6 chars, include uppercase, lowercase, and number"
+              helperText="Min 8 chars, include uppercase, lowercase, and number"
               required
             />
             <Input
@@ -137,7 +137,6 @@ const Register = () => {
             >
               {loading ? (
                 <>
-                  <i className="fas fa-spinner fa-spin mr-2" />
                   Creating account...
                 </>
               ) : (

@@ -158,7 +158,7 @@ const Profile = () => {
             type="password"
             value={passwordForm.newPassword}
             onChange={(e) => setPasswordForm({ ...passwordForm, newPassword: e.target.value })}
-            helperText="Min 6 chars, include uppercase, lowercase, and number"
+            helperText="Min 8 chars, include uppercase, lowercase, and number"
             required
           />
           <Input
